@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let sales = parseFloat(prompt("moi ban nhap doanh so cua ban(dv trieu):","VND"))
+    let bonus;
+    if (sales<10 || sales==10){
+        bonus = sales*0.02;
+        alert("tien hoa hong cua ban la:" + bonus);
+    } else if(sales>10 && sales < 50 || sales == 50){
+        bonus = 10 * 0.02 + (sales - 10) * 0.05;
+        alert('tien hoa hong cua ban la:' + bonus);
+    } else if (sales > 50){
+        bonus = (sales-50)*0.1 + 10* 0.02 + 40 * 0.05;
+        alert('Tien hoa hong cua ban la:'+ bonus);
+    }
+
+</script>
+</body>
+</html>

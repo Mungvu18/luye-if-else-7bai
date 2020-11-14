@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("nhap diem kiem tra"));
+    let b = parseFloat(prompt("nhap diem ti giua ky"));
+    let c = parseFloat(prompt("nhap diem thi cuoi ky"));
+    let avg = (a+b*2+c*3)/6;
+    if(avg>8.5 || avg==8.5){
+        alert('Ban xep hang gioi voi so diem la' + avg);
+    } else if (7<avg || avg==7 && avg<8.5 || avg==8){
+        alert('ban xep hang kha voi so diem la' + avg);
+    } else if (5<avg && avg<7){
+        alert("ban xep hang trung binh voi so diem la" + avg);
+    } else {
+        alert(" ban xep hang yeu voi so diem la" + avg);
+    }
+</script>
+</body>
+</html>
